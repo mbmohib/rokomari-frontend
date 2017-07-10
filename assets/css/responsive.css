@@ -1,4 +1,122 @@
-/* Portraint Phones and Smaller */
-@media only screen and (max-width : 480px) {
+/*==========  Mobile First Method  ==========*/
+
+ 
+/*----------------------------------------*/
+/* Custom, iPhone Retina */
+/*----------------------------------------*/
+    @media only screen and (min-width : 320px) {
+        
+        /* Header Component */
+        .navbar {
+            margin-bottom: 2px;
+        }
+        .navbar-nav {
+            padding-top: 22px;
+        }
+        .navbar-brand {
+            top: -25px;
+        }
+        .navbar-brand img {
+            width: 72%;
+        }
+        .carousel-indicators {
+            bottom: -30px;
+        }
+    }
+
+
+
+/*----------------------------------------*/
+/* Extra Small Devices, Phones */
+/*----------------------------------------*/
+    @media only screen and (min-width : 480px) {
+        
+        /* Header Component */
+        .navbar-nav {
+            padding-top: 22px;
+        }
+        .carousel-indicators {
+            bottom: -32px;
+        }
+
+    }
+
+
+
+/*----------------------------------------*/
+/* Small Devices, Tablets */
+/*----------------------------------------*/
+    @media only screen and (min-width : 768px) {
+        
+        /* Header Component */
+        .carousel-indicators {
+            bottom: -50px;
+        }
+    }
+
+
+/*----------------------------------------*/
+/* Medium Devices, Desktops */
+/*----------------------------------------*/
+    @media only screen and (min-width : 992px) {
+        
+        /* Header Component */
+        .nav > li > a {
+            position: relative;
+            display: block;
+            padding: 10px 8px;
+        }
+
+    }
+
+
+/*----------------------------------------*/
+/* Large Devices, Wide Screens */
+/*----------------------------------------*/
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
+
+
+/* Change Navbar Collapse Breakpoint*/
+
+@media (max-width: 992px) {
     
+    /* Change Navbar Collapse Breakpoint*/
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
 }

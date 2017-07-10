@@ -8,6 +8,17 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    background: rgba(0,221,170,1);
+    background: -moz-linear-gradient(-45deg, rgba(0,221,170,1) 0%, rgba(1,202,246,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,221,170,1)), color-stop(100%, rgba(1,202,246,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(0,221,170,1) 0%, rgba(1,202,246,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(0,221,170,1) 0%, rgba(1,202,246,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(0,221,170,1) 0%, rgba(1,202,246,1) 100%);
+    background: linear-gradient(135deg, rgba(0,221,170,1) 0%, rgba(1,202,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ddaa', endColorstr='#01caf6', GradientType=1 );
+}
+
 
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
@@ -72,18 +83,27 @@ nav {
 }
 .navbar-brand {
     position: absolute;
-    top: -27px;
     left: -1px;
 }
-.navbar-brand img {
-    width: 90%;
+.nav > li > a {
+    position: relative;
+    display: block;
 }
 .nav.navbar-nav li a {
     text-transform: uppercase;
     color: #5c5c5c;
+    transition: all .5s;
 }
 .nav.navbar-nav li a:hover {
     color: #fff;
+    background: rgba(183,32,119,1);
+    background: -moz-linear-gradient(-45deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(183,32,119,1)), color-stop(72%, rgba(46,47,113,1)), color-stop(100%, rgba(46,47,113,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
+    background: linear-gradient(135deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
+    border-radius: 4px;
 }
 .carousel-inner .item img {
     width: 120%;

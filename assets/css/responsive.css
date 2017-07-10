@@ -14,7 +14,7 @@
             padding-top: 22px;
         }
         .navbar-brand {
-            top: -25px;
+            top: -27px;
         }
         .navbar-brand img {
             width: 72%;
@@ -74,7 +74,20 @@
 /* Large Devices, Wide Screens */
 /*----------------------------------------*/
     @media only screen and (min-width : 1200px) {
-
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .navbar-brand {
+            position: absolute;
+            top: -32px;
+            left: -1px;
+        }
+        .navbar-brand img {
+            width: 100%;
+        }
+        .nav > li > a {
+            padding: 8px 15px;
+        }
     }
 
 

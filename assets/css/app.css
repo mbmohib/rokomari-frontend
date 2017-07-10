@@ -63,7 +63,20 @@ nav {
     background-color: transparent;
     border-color: transparent;
 }
-
+.navbar-header {
+    position: relative;
+    width: 100%;
+}
+.navbar-brand {
+    position: absolute;
+    top: -27px;
+}
+.navbar-brand img {
+    width: 70%;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    padding-top: 20px;
+}
 
 
 

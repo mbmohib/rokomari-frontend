@@ -45,3 +45,53 @@ section {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+
+/*----------------------------------------*/
+/* Header Component */
+/*----------------------------------------*/
+header {
+    background: #ECF1EA;
+}
+header .nav.navbar-nav {
+    text-transform: uppercase;
+}
+nav {
+    margin-top: 30px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

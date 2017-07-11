@@ -14,13 +14,19 @@
             padding-top: 22px;
         }
         .navbar-brand {
-            top: -27px;
+            top: -25px;
         }
         .navbar-brand img {
             width: 72%;
         }
         .carousel-indicators {
             bottom: -30px;
+        }
+        
+        
+        /* Services Component */
+        .middle-content ul li {
+            font-size: 130%;
         }
     }
 
@@ -34,6 +40,9 @@
         /* Header Component */
         .navbar-nav {
             padding-top: 22px;
+        }
+        .navbar-brand {
+            top: -28px;
         }
         .carousel-indicators {
             bottom: -32px;
@@ -66,6 +75,12 @@
             display: block;
             padding: 10px 8px;
         }
+        
+        /* Services Component */
+        .middle-content ul li {
+            font-size: 120%;
+            letter-spacing: 1px;
+        }
 
     }
 
@@ -80,7 +95,6 @@
         .navbar-brand {
             position: absolute;
             top: -32px;
-            left: -1px;
         }
         .navbar-brand img {
             width: 100%;
@@ -88,6 +102,13 @@
         .nav > li > a {
             padding: 8px 15px;
         }
+        
+        /* Services Component */
+        .middle-content ul li {
+            font-size: 115%;
+        }
+        
+        
     }
 
 

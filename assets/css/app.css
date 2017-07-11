@@ -19,6 +19,7 @@ body {
 
 
 h1, h2, h3 {
+    font-size: 200%;
     line-height: 1.6em;
     letter-spacing: 1px;
     font-weight: 300;
@@ -70,6 +71,9 @@ nav {
     padding-left: 5%; 
     padding-right: 5%; 
 }
+.navbar {
+    margin-bottom: 0px;
+}
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -80,7 +84,11 @@ nav {
 }
 .navbar-brand {
     position: absolute;
-    left: -16px;
+    left: -30px;
+    top: -24px;
+}
+.navbar-brand img {
+    width: 60%;
 }
 .nav > li > a {
     position: relative;
@@ -122,7 +130,7 @@ nav {
 
 
 #services {
-    padding: 50px 0px;
+    padding: 20px 0px;
     background: #00b8b6;
     color: #fff;
 }
@@ -132,14 +140,15 @@ nav {
     text-transform: capitalize;
     border-bottom: 4px solid #fff;
     margin-bottom: 4px;
+    font-size: 150%;
 }
 .middle-title span {
     text-align: center;
     display: inline-block;
     margin-right: 3%;
-    width: 60px;
-    height: 60px;
-    padding-top: 6px;
+    width: 40px;
+    height: 40px;
+    padding-top: 3px;
     border: 2px solid #fff;
     border-radius: 50%;
     background: rgba(1,201,246,1);

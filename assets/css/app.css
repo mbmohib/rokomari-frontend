@@ -30,7 +30,7 @@ p {
     line-height: 1.5em;
     letter-spacing: 1px;
 }
-a {
+a:link, a:active {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
@@ -100,6 +100,7 @@ nav {
     -webkit-transition: all .5s;
     transition: all .5s;
     font-weight: 500;
+    border-radius: 4px;
 }
 .nav.navbar-nav li a:hover {
     color: #fff;
@@ -107,8 +108,7 @@ nav {
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(183,32,119,1)), color-stop(72%, rgba(46,47,113,1)), color-stop(100%, rgba(46,47,113,1)));
     background: -webkit-linear-gradient(-45deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
     background: -webkit-linear-gradient(315deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
-    background: linear-gradient(135deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
-    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);  
 }
 .carousel-inner .item img {
     width: 120%;
@@ -200,8 +200,44 @@ nav {
 
 
 
-
-
+/*----------------------------------------*/
+/* Bottom Component */
+/*----------------------------------------*/
+#bottom {
+    background: #ecf1e9;
+    padding-bottom: 50px;
+}
+#bottom h2 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#bottom p {
+    margin-bottom: 30px;
+}
+.bottom-button {
+    text-transform: capitalize;
+    color: #fff;
+    background: #00b8b6;
+    padding: 5px 8px;
+    font-size: 120%;
+}
+.bottom-button:hover {
+    color: #fff;
+    background: rgba(183,32,119,1);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(183,32,119,1)), color-stop(72%, rgba(46,47,113,1)), color-stop(100%, rgba(46,47,113,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
+    background: -webkit-linear-gradient(315deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
+    background: linear-gradient(135deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);  
+}
+#welcome img {
+    border: 10px solid #fff;
+}
+#welcome h5 {
+    font-size: 110%;
+    font-weight: 600;
+    color: #00b8b6;
+}
 
 
 

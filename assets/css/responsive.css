@@ -65,6 +65,13 @@
             height: 60px;
             padding-top: 6px;
         }
+        
+        /* Footer Component */
+        .footer-nav ul li {
+            float: left;
+            margin-right: 5px;
+            font-size: 85%;
+        }
 
     }
 
@@ -78,6 +85,17 @@
         /* Header Component */
         .carousel-indicators {
             bottom: -50px;
+        }
+        
+        /* Footer Component */
+        footer {
+            padding-top: 0px;
+            padding-left: 1%;
+            padding-right: 0%;
+        }
+        .footer-nav ul li {
+            float: left;
+            font-size: 90%;
         }
     }
 
@@ -107,7 +125,8 @@
             background: #ecf1e9;
             margin-top: 0px;
             padding-left: 5%;
-            padding-right: 5%;
+            padding-right: 5%;  
+            padding-bottom: 50px;
         }
         #bottom h2 {
             padding-bottom: 20px;
@@ -140,6 +159,12 @@
         }
         .buttom-services {
             padding-bottom: 22px;
+        }
+        
+        /* Footer Component */
+        footer {
+            padding-top: 20px;
+            padding-left: 0%;
         }
 
     }

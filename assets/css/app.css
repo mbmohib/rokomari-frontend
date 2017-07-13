@@ -9,12 +9,14 @@ html {
 }
 
 body {
-    background: rgba(0,221,170,1);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,221,170,1)), color-stop(100%, rgba(1,202,246,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(0,221,170,1) 0%, rgba(1,202,246,1) 100%);
-    background: -webkit-linear-gradient(315deg, rgba(0,221,170,1) 0%, rgba(1,202,246,1) 100%);
-    background: linear-gradient(135deg, rgba(0,221,170,1) 0%, rgba(1,202,246,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ddaa', endColorstr='#01caf6', GradientType=1 );
+    background: rgba(1,202,246,1);
+    background: -moz-linear-gradient(top, rgba(1,202,246,1) 0%, rgba(1,202,246,1) 19%, rgba(0,221,170,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(1,202,246,1)), color-stop(19%, rgba(1,202,246,1)), color-stop(100%, rgba(0,221,170,1)));
+    background: -webkit-linear-gradient(top, rgba(1,202,246,1) 0%, rgba(1,202,246,1) 19%, rgba(0,221,170,1) 100%);
+    background: -o-linear-gradient(top, rgba(1,202,246,1) 0%, rgba(1,202,246,1) 19%, rgba(0,221,170,1) 100%);
+    background: -ms-linear-gradient(top, rgba(1,202,246,1) 0%, rgba(1,202,246,1) 19%, rgba(0,221,170,1) 100%);
+    background: linear-gradient(to bottom, rgba(1,202,246,1) 0%, rgba(1,202,246,1) 19%, rgba(0,221,170,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01caf6', endColorstr='#00ddaa', GradientType=0 );
 }
 
 
@@ -203,7 +205,6 @@ nav {
 /*----------------------------------------*/
 #bottom {
     margin-top: 50px;
-    padding-bottom: 50px;
     padding-left: 3%;
     padding-right: 3%;
 }
@@ -276,10 +277,42 @@ nav {
 }
 
 
+/*----------------------------------------*/
+/* Bottom Component */
+/*----------------------------------------*/
 
-
-
-
+footer {
+    height: 80px;
+/*    padding-top: 20px;*/
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.footer-nav ul {
+    padding: 0px;
+}
+.footer-nav ul li {
+    list-style: none;
+}
+.footer-nav ul li a {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 90%;
+}
+.footer-nav ul li a:hover {
+    color: rgba(183,32,119,1);
+}
+.copyright {
+    padding-top: 9px;
+}
+.copyright p {
+    display: inline-block;
+    font-size: 90%;
+    color: #74ffe0;
+}
+.copyright p:last-child {
+    margin-left: 10px;
+}
 
 
 

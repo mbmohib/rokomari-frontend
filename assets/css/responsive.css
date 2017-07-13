@@ -26,9 +26,6 @@
         
         
         /* Services Component */
-        #services {
-            padding: 50px 0px;
-        }
         .middle-title h2 {
             font-size: 200%;
         }
@@ -102,6 +99,47 @@
             font-size: 120%;
             letter-spacing: 1px;
         }
+        
+        /* Bottom Accordion Component */
+        
+        #bottom {
+            padding-top: 60px;
+            background: #ecf1e9;
+            margin-top: 0px;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        #bottom h2 {
+            padding-bottom: 20px;
+        }
+        
+        .panel {
+            margin-bottom: 20px;
+            background-color: #ecf1e9;
+            border: none;
+            border-radius: none;
+            box-shadow: none;
+        }
+        .panel-body {
+             padding: 0px; 
+        }
+        .panel-default>.panel-heading {
+            color: #000;
+            background-color: #ecf1e9;
+            border: none;
+        }
+        #welcome img, #mission img  {
+            border: 15px solid #fff;
+        }
+        .panel-title a {
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+            font-weight: 100;
+            font-size: 150%;
+        }
+        .buttom-services {
+            padding-bottom: 22px;
+        }
 
     }
 
@@ -127,6 +165,11 @@
         /* Services Component */
         .middle-content ul li {
             font-size: 115%;
+        }
+        
+        /* Bottom Accordion Component */
+        .buttom-services {
+            padding-bottom: 30px;
         }
         
         

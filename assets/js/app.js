@@ -8,7 +8,16 @@ $( document ).ready(function() {
      // Call once on initial load
 
      checkMod ();
+    
+    $('#footer-menu a').on('click', function(e) {
+        e.preventDefault();
+        $('.footer-nav').find('ul').slideToggle();
+    });
+    
 });
+
+
+
 
 var checkMod = function() {
 

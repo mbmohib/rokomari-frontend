@@ -283,14 +283,16 @@ nav {
 
 footer {
     height: 80px;
-/*    padding-top: 20px;*/
     padding-left: 1%;
     padding-right: 1%;
 }
 .footer-nav ul {
+    margin-top: 10px;
+    display: none;
     padding: 0px;
 }
 .footer-nav ul li {
+    margin-left: 5px;
     list-style: none;
 }
 .footer-nav ul li a {
@@ -303,7 +305,7 @@ footer {
     color: rgba(183,32,119,1);
 }
 .copyright {
-    padding-top: 9px;
+    padding-top: 7px;
 }
 .copyright p {
     display: inline-block;
@@ -312,6 +314,14 @@ footer {
 }
 .copyright p:last-child {
     margin-left: 10px;
+}
+
+#footer-menu a {
+    color: #fff;
+    background: #01CAF6;
+    padding: 5px 13px;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 

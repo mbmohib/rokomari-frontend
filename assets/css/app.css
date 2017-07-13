@@ -79,6 +79,7 @@ nav {
     width: 100%;
 }
 .navbar-brand {
+    z-index: 100;
     position: absolute;
     left: -30px;
     top: -24px;
@@ -221,6 +222,7 @@ nav {
     padding: 8px 11px;
     font-size: 110%;
     border-radius: 2px;
+    margin-bottom: 20px;
 }
 .bottom-button:hover {
     color: #fff;
@@ -229,6 +231,13 @@ nav {
     background: -webkit-linear-gradient(-45deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
     background: -webkit-linear-gradient(315deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
     background: linear-gradient(135deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);  
+}
+.panel-body {
+    background: #ecf1e9;
+    padding-bottom: 25px;
+}
+.panel-title a {
+    cursor: pointer;
 }
 #welcome img, #mission img {
     margin-bottom: 30px;

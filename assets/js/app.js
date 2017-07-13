@@ -49,8 +49,7 @@ var checkMod = function() {
                                 .attr('class', 'panel panel-default');
            
            $('.panel-body').parent().addClass('collapse');
-           $('.panel-title').find('a').attr('data-toggle', 'collapse')
-           $('.panel-title').find('a').attr('data-toggle', 'collapse')
+           $('.panel-title').find('a').attr('data-toggle', 'collapse');
        }
        
        

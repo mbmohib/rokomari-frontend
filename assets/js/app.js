@@ -1,14 +1,15 @@
 
 
 $( document ).ready(function() {
-    // Call on every window resize
 
+    // Call on every window resize
      $(window).resize(checkMod);
 
      // Call once on initial load
-
      checkMod ();
     
+    
+    // Show footer menu on click
     $('#footer-menu a').on('click', function(e) {
         e.preventDefault();
         $('.footer-nav').find('ul').slideToggle();
@@ -20,27 +21,31 @@ $( document ).ready(function() {
 
 
 var checkMod = function() {
+    
+    var colMedium = $('#bottom').find('.col-md-4').length;
+    var panel = $('#bottom').find('.panel-group');
+    var panelBody = $('.panel-body');
+    var panelTitle = $('.panel-title');
+    var checkPanel = $('.panel-heading').length;
 
    if(Modernizr.mq('(min-width: 992px)')) {
        
-       var colMedium = $('#bottom').find('.col-md-4').length;
-       var panel = $('#bottom').find('.panel-group');
-       
+       // Check if col-md-4 class applied
        if ( colMedium == 0 ) {
            
-           $('.panel.panel-default').wrap( "<div class='col-md-4'></div>" );
-            
+           $('.panel.panel-default').wrap( "<div class='col-md-4'></div>" );     
+           
        }
        
-        panel.removeAttr('id role aria-multiselectable');
-        panel.find('.panel').removeAttr('class');
-        panel.find('.panel-heading').removeAttr('class');
-        panel.find('.panel-title a').removeAttr('data-toggle');
-       $('.panel-body').parent().removeClass('collapse');
+       
+       // Remove Accordion specific style
+        panel.removeAttr('id role aria-multiselectable')
+            .find('.panel').removeAttr('class')
+            .find('.panel-heading').removeAttr('class')
+            .find('.panel-title a').removeAttr('data-toggle');
+        panelBody.parent().removeClass('collapse');
     
    } else {
-       
-       var checkPanel = $('.panel-heading').length;
        
        if ( checkPanel == 0 ) {
            
@@ -50,18 +55,15 @@ var checkMod = function() {
                'aria-multiselectable' : 'true'
             });
        
-            $('.panel-title').parent()
-                                .attr('class', 'panel-heading')
-                            .parent()
-                                .attr('class', 'panel panel-default');
+           panelTitle.parent()
+                        .attr('class', 'panel-heading')
+                    .parent()
+                        .attr('class', 'panel panel-default');
            
-           $('.panel-body').parent().addClass('collapse');
-           $('.panel-title').find('a').attr('data-toggle', 'collapse');
+           panelBody.parent().addClass('collapse');
+           panelTitle.find('a').attr('data-toggle', 'collapse');
        }
        
-       
-       
-       var colMedium = $('#bottom').find('.col-md-4').length;
        
        if ( colMedium > 0 ) {
            

@@ -44,10 +44,12 @@ a:link, a:active {
 .btn-def { 
     background: #04B1AF;
 }
-.btn-def:hover {
+btn-def:hover {
     background: #862576;
 }
-
+html.can-touch .btn-def:hover {
+    background: none;
+}
 .m-divider {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -109,6 +111,10 @@ nav {
     background: -webkit-linear-gradient(315deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
     background: linear-gradient(135deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);  
 }
+html.can-touch .nav.navbar-nav li a:hover {
+    color: #5c5c5c;
+    background: none; 
+}
 .carousel-inner .item img {
     width: 120%;
 }
@@ -168,6 +174,9 @@ nav {
 .middle-content ul li:hover {
     color: #8fd9d8;
 }
+html.can-touch .middle-content ul li:hover {
+    color: #fff;
+}
 .middle-content ul li:before, .buttom-services li:before {
     content: " ";
     padding: 0px 5px;
@@ -180,6 +189,9 @@ nav {
 }
 .middle-content ul li:hover:before {
     background: #8fd9d8;
+}
+html.can-touch .middle-content ul li:hover:before {
+    background: #fff;
 }
 .middle-link {
     margin-top: 20px;
@@ -195,6 +207,12 @@ nav {
     text-transform: uppercase;
     color: #fff;
     font-weight: 800;
+}
+.middle-link a:hover {
+    color: #8fd9d8;
+}
+html.can-touch .middle-link a:hover {
+    color: #fff;
 }
 
 
@@ -233,6 +251,10 @@ nav {
     background: -webkit-linear-gradient(315deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);
     background: linear-gradient(135deg, rgba(183,32,119,1) 0%, rgba(46,47,113,1) 72%, rgba(46,47,113,1) 100%);  
 }
+html.can-touch .bottom-button:hover {
+    color: #fff;
+    background: #00b8b6; 
+}
 .panel-body {
     background: #ecf1e9;
     padding-bottom: 25px;
@@ -269,11 +291,17 @@ nav {
 .buttom-services li:hover {
     color: rgba(183,32,119,1);
 }
+html.can-touch .buttom-services li:hover {
+    color: #00b8b6;
+}
 .buttom-services li:before {
     background: #00b8b6;
 }
 .buttom-services li:hover:before {
     background: rgba(183,32,119,1);
+}
+html.can-touch .buttom-services li:hover:before {
+    background: #00b8b6;
 }
 
 
@@ -303,6 +331,9 @@ footer {
 }
 .footer-nav ul li a:hover {
     color: rgba(183,32,119,1);
+}
+html.can-touch .footer-nav ul li a:hover {
+    color: #fff;
 }
 .copyright {
     padding-top: 7px;

@@ -24,9 +24,7 @@ var checkMod = function() {
    if(Modernizr.mq('(min-width: 992px)')) {
        
        var colMedium = $('#bottom').find('.col-md-4').length;
-//       console.log(colMedium);
        var panel = $('#bottom').find('.panel-group');
-//       console.log(panel);
        
        if ( colMedium == 0 ) {
            
